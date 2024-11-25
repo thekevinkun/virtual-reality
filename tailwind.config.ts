@@ -19,15 +19,16 @@ export default {
       colors: {
         white: {
           DEFAULT: "#FFFFFF",
-          1: "EFDEDE",
+          1: "#EFDEDE",
         },
         purple: {
           DEFAULT: "#AA14F0",
-          1: "DF308D"
+          1: "#C824EC",
+          2: "#DF308D"
         }
       },
       fontFamily: {
-        "great-primer": "var(--great-primer)",
+        "great-primer": "var(--font-great-primer)",
         orbitron: "var(--font-orbitron)",
         inter: "var(--font-inter)"
       }

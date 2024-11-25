@@ -19,7 +19,7 @@ export interface CustomTextProps {
 }
 
 export interface ButtonProps {
-    containerStyles: string;
+    containerStyles?: string;
     textStyles?: string;
     title: string;
     btnIcon?: string;
