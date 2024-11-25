@@ -12,6 +12,13 @@
   --font-inter: "Inter", sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 .glassmorphism {
   /* From https://css.glass */
   background: rgba(170, 20, 240, 0.34);
@@ -30,11 +37,11 @@
 
 @layer components {
   .h1 {
-    @apply font-orbitron font-bold text-[1.85rem] leading-[2.25rem] xs:text-[2.25rem] xs:leading-[2.85rem] sm:text-[2.85rem] sm:leading-[3.25rem] md:text-[3.5rem] md:leading-[4rem] lg:text-[4rem] lg:leading-[4.5rem] tracking-wider;
+    @apply font-orbitron font-bold text-[2.5rem] leading-[3.5rem] sm:text-[3rem] sm:leading-[4rem] lg:text-[2.5rem] lg:leading-[3.5rem] xl:text-[3rem] xl:leading-[4rem] tracking-wider;
   }
 
   .h2 {
-    @apply font-orbitron font-semibold text-[1.5rem] leading-[2rem] sm:text-[2rem] sm:leading-[2.5rem] md:text-[3rem] md:leading-[3.5rem] tracking-wide;
+    @apply font-orbitron font-semibold text-[1.2rem] leading-[1.45] xs:text-[1.35rem] xs:leading-[1.75rem] lg:text-[1.5rem] lg:leading-[2rem] xl:text-[1.75rem] xl:leading-[2.25rem] tracking-wide;
   }
 
   .p {
@@ -48,11 +55,11 @@
 
 @layer utilities {
   .padding {
-    @apply sm:p-16 xs:p-8 px-6 py-12;
+    @apply sm:p-16 px-6 py-12;
   }
 
   .yPaddings {
-    @apply sm:py-16 xs:py-8 py-12; 
+    @apply sm:py-16 py-12; 
   }
 
   .xPaddings {
@@ -60,11 +67,11 @@
   }
 
   .topPaddings {
-    @apply sm:pt-16 xs:pt-8 pt-12;
+    @apply sm:pt-16 pt-12;
   }
 
   .bottomPaddings {
-    @apply sm:pb-16 xs:pb-8 pb-12;
+    @apply sm:pb-16 pb-12;
   }
 
   .logo-text {

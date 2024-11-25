@@ -1,9 +1,22 @@
+import { motion } from "framer-motion";
+
 import { CustomTextProps } from "@/types";
 
-export const TitleText = ({ title, textStyles }: CustomTextProps) => (
-    <h2></h2>
-)
+import { textContainer, textVariant2 } from "@/utils/motion";
 
-export const TypingText = ({title, textStyles}: CustomTextProps) => (
-    <p></p>
-);
+const TypingText = ({title, textStyles}: CustomTextProps) => {
+  return (
+    <motion.h2
+        variants={textContainer}
+        className={`h2 ${textStyles}`}
+    >
+        {Array.from(title).map((letter, index) => (
+            <motion.span variants={textVariant2} key={index}>
+                {letter === ' ' ? '\u00A0' : letter}
+            </motion.span>
+        ))}
+    </motion.h2>
+  )
+}
+
+export default TypingText;

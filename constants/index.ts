@@ -25,6 +25,16 @@ export const realityHeadsets = [
     }
 ]
 
+export const peopleOnline = {
+    total: "400k",
+    people: [
+        "/images/person-online-1.png",
+        "/images/person-online-2.png",
+        "/images/person-online-3.png",
+        "/images/person-online-4.png"
+    ]
+}
+
 export const clients = [
     {
         id: "client-1",

@@ -15,7 +15,7 @@ export interface ClientProps {
 
 export interface CustomTextProps {
     title: string;
-    textStyles: string;
+    textStyles?: string;
 }
 
 export interface ButtonProps {
