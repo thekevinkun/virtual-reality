@@ -41,7 +41,7 @@
   }
 
   .h2 {
-    @apply font-orbitron font-semibold text-[1.2rem] leading-[1.45] xs:text-[1.35rem] xs:leading-[1.75rem] lg:text-[1.5rem] lg:leading-[2rem] xl:text-[1.75rem] xl:leading-[2.25rem] tracking-wide;
+    @apply font-orbitron font-semibold tracking-wide;
   }
 
   .p {
@@ -99,7 +99,7 @@
   }
 
   .gradient-1 {
-    @apply absolute top-0 left-0 w-[200px] h-[438px] bg-purple blur-[190px];
+    @apply absolute top-[55%] lg:top-[40%] left-0 w-[185px] h-[438px] bg-purple blur-[130px];
   }
 
   .gradient-2 {

@@ -6,8 +6,11 @@ export default function Home() {
   return (
     <div className="bg-black">
       <Navbar />
-      <Hero />
-      <VRGame />
+      <div className="relative">
+        <Hero />
+        <div className="gradient-1 z-0"/>
+        <VRGame />
+      </div>
       <VRVideo />
       <VRHeadsets />
       <Clients />
