@@ -2,20 +2,19 @@
 
 import { motion } from "framer-motion";
 
-import { fadeIn, slideIn, staggerContainer, textVariant, textVariant2 } from "@/utils/motion";
-
 import { Button, TypingText } from "@/components";
 
+import { fadeIn, slideIn, staggerContainer, textVariant, textVariant2 } from "@/utils/motion";
 import { peopleOnline } from "@/constants";
 
 const Hero = () => {
   return (
-    <section id="home" className="padding">
+    <section id="home" className="padding relative z-10">
       <motion.div 
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{once: false, amount: 0.25}}
+        viewport={{once: true, amount: 0.25}}
         className="relative flex flex-col lg:flex-row lg:gap-5 xl:gap-8"
       >
         <div>
@@ -87,14 +86,14 @@ const Hero = () => {
               <div className="px-3 h-full flexCenter flex-col">
                 <TypingText 
                   title="Cinematic Virtual Reality"
-                  textStyles="mt-24 md:mt-28"
+                  textStyles="mt-28 text-[1.15rem] leading-[1.35rem] xs:text-[1.35rem] xs:leading-[1.75rem] sm:text-[1.5rem] sm:leading-[2rem] xl:text-[1.65rem] xl:leading-[2.15rem]"
                 />
 
-                <div className="mt-5 sm:mt-7 w-[170px] sm:w-[240px] border border-white-1" />
+                <div className="mt-7 w-[150px] xs:w-[170px] sm:w-[240px] border border-white-1" />
 
                 <motion.p 
                   variants={textVariant(1.2)} 
-                  className="p mt-10 lg:mt-8 px-10 lg:px-8 xl:px-14 text-center"
+                  className="p mt-8 px-14 lg:px-8 xl:px-14 text-center"
                 >
                   Let’s be the best for more real and effective results and ready
                   to explore the limitless world that we have prepared for you.
