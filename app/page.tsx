@@ -12,8 +12,11 @@ export default function Home() {
         <VRGame />
       </div>
       <VRVideo />
-      <VRHeadsets />
-      <Clients />
+      <div className="relative">
+        <VRHeadsets />
+        <div className="gradient-2 z-0"/>
+        <Clients />
+      </div>
       <CompanyValues />
       <ExploreProducts />
       <Footer />

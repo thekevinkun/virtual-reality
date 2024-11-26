@@ -1,25 +1,25 @@
 export const realityHeadsets = [
     {
         id: "headset-1",
-        img: "/images/headset-1",
+        img: "/images/headset-1.png",
         title: "Metaverse",
         description: "A Network of 3D virtual worlds focused on social connection."
     },
     {
         id: "headset-2",
-        img: "/images/headset-2",
+        img: "/images/headset-2.png",
         title: "AIoT",
         description: "AI and IoT are both emerging innovative technologies with a lot of potentials."
     },
     {
         id: "headset-3",
-        img: "/images/headset-3",
+        img: "/images/headset-3.png",
         title: "HoloLens",
-        description: "HoloLens display information, blend with the real world , or even simulate a virtual world."
+        description: "HoloLens display information, blend with the real world, or even simulate a virtual world."
     },
     {
         id: "headset-4",
-        img: "/images/headset-4",
+        img: "/images/headset-4.png",
         title: "TPCASTT",
         description: "Method is great to start students reading and inferring with little assistance from the instructor."
     }

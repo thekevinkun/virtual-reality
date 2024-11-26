@@ -19,7 +19,14 @@
   scroll-behavior: smooth;
 }
 
-.glassmorphism {
+.glassmorphism-1 {
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(8.3px);
+  -webkit-backdrop-filter: blur(8.3px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.glassmorphism-2 {
   /* From https://css.glass */
   background: rgba(170, 20, 240, 0.34);
   border-radius: 8px;
@@ -103,6 +110,10 @@
   }
 
   .gradient-2 {
+    @apply absolute top-[65%] lg:top-[45%] left-0 w-[185px] h-[610px] bg-purple blur-[125px];
+  }
+
+  .gradient-3 {
     @apply absolute top-0 right-0 w-[200px] h-[438px] bg-purple blur-[190px];
   }
 
