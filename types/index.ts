@@ -1,6 +1,8 @@
 import { MouseEventHandler } from "react"
 
 export interface HeadsetProps {
+    id: string;
+    i: number;
     title: string;
     description: string;
     image: string;
