@@ -40,21 +40,21 @@ export const clients = [
         id: "client-1",
         name: "Denny Hilguston",
         username: "@denny.hill",
-        img: "/images/client-1",
+        img: "/images/client-1.png",
         comment: "I know in real-time where the money is spent,and I don’t have to lend out the company’s credit card anymore. What a relief!"
     },
     {
         id: "client-2",
         name: "Vani Pandey",
         username: "@vani_pandey",
-        img: "/images/client-2",
+        img: "/images/client-2.png",
         comment: "VISUALS are much better. The improvements in optics and resolution and much more than a modern console generation leap."
     },
     {
         id: "client-3",
         name: "Milly Singh",
         username: "@millysingh",
-        img: "/images/client-3",
+        img: "/images/client-3.png",
         comment: "I can actually see the improvement in the graphics, not having the external sensors is a big plus."
     },
 ]

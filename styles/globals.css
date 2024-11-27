@@ -28,12 +28,20 @@
 
 .glassmorphism-2 {
   /* From https://css.glass */
-  background: rgba(170, 20, 240, 0.34);
+  background: linear-gradient(180deg, rgba(170,20,240, 0.35) 0%, rgba(151,60,68,0.1) 85%);
   border-radius: 8px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.3px);
-  -webkit-backdrop-filter: blur(4.3px);
-  border: 1px solid rgba(170, 20, 240, 0.21);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.glassmorphism-3 {
+  /* From https://css.glass */
+  background: linear-gradient(180deg, rgba(170,20,240,0.25) 0%, rgba(151,60,68,0.15) 80%);
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 @layer base {
@@ -102,7 +110,7 @@
   }
 
   .nav-gradient {
-    @apply absolute top-0 left-[14%] w-[300px] h-[80px] md:w-[560px] md:h-[100px] bg-purple blur-[100px] md:blur-[125px];
+    @apply absolute top-0 left-[9%] sm:left-[14%] w-[300px] h-[80px] md:w-[560px] md:h-[100px] bg-purple blur-[100px] md:blur-[125px];
   }
 
   .gradient-1 {
@@ -110,7 +118,7 @@
   }
 
   .gradient-2 {
-    @apply absolute top-[65%] lg:top-[45%] left-0 w-[185px] h-[610px] bg-purple blur-[125px];
+    @apply absolute top-[50%] lg:top-[45%] left-0 w-[185px] h-[610px] bg-purple blur-[125px];
   }
 
   .gradient-3 {

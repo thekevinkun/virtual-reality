@@ -9,6 +9,8 @@ export interface HeadsetProps {
 }
 
 export interface ClientProps {
+    id: string;
+    i: number;
     name: string;
     username: string;
     comment: string;
