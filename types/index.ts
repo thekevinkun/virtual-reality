@@ -27,5 +27,6 @@ export interface ButtonProps {
     textStyles?: string;
     title: string;
     btnIcon?: string;
+    iconStyles?: string;
     handleClick?: MouseEventHandler<HTMLButtonElement>;
 }
