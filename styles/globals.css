@@ -122,7 +122,7 @@
   }
 
   .gradient-3 {
-    @apply absolute top-0 right-0 w-[200px] h-[438px] bg-purple blur-[190px];
+    @apply absolute top-0 right-0 w-[150px] h-[320px] bg-purple blur-[125px];
   }
 
   .active-nav {
