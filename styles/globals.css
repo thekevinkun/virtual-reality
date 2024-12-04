@@ -46,7 +46,7 @@
 
 @layer base {
   body {
-    @apply font-inter text-white;
+    @apply bg-black font-inter text-white;
   }
 }
 
@@ -123,6 +123,10 @@
 
   .gradient-3 {
     @apply absolute top-0 right-0 w-[150px] h-[320px] bg-purple blur-[125px];
+  }
+
+  .gradient-4 {
+    @apply absolute bottom-[0] left-[50%] translate-x-[-50%] w-[380px] h-[45px] bg-purple blur-[125px];
   }
 
   .active-nav {
