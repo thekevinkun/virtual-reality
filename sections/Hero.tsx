@@ -14,7 +14,7 @@ const Hero = () => {
         variants={staggerContainer(0.25, 0.15)}
         initial="hidden"
         whileInView="show"
-        viewport={{once: false, amount: 0.25}}
+        viewport={{once: false, amount: 0.10}}
         className="relative flex flex-col lg:flex-row lg:gap-5 xl:gap-8"
       >
         <div>

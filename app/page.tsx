@@ -1,5 +1,5 @@
 import { Navbar } from "@components";
-import { Hero } from "@sections";
+import { Hero, VRGame } from "@sections";
 
 const Home = () => {
   return (
@@ -8,6 +8,7 @@ const Home = () => {
       <div className="relative">
         <Hero />
         <div className="gradient-1 z-0"/>
+        <VRGame />
       </div>
     </div>
   )
