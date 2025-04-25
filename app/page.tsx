@@ -1,6 +1,10 @@
+import { Navbar } from "@components"
+
 const Home = () => {
   return (
-    <div className="bg-black">page</div>
+    <div className="bg-black">
+      <Navbar />
+    </div>
   )
 }
 
