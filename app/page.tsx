@@ -1,5 +1,5 @@
 import { Navbar } from "@components";
-import { Hero, VRGame } from "@sections";
+import { Hero, VRGame, VRVideo } from "@sections";
 
 const Home = () => {
   return (
@@ -10,6 +10,7 @@ const Home = () => {
         <div className="gradient-1 z-0"/>
         <VRGame />
       </div>
+      <VRVideo />
     </div>
   )
 }
