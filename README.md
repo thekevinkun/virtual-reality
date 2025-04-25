@@ -1,0 +1,1 @@
+# A modern landing page of Virtual Reality built with Next.js 14, Tailwind, and Typescript
