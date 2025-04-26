@@ -44,20 +44,6 @@ const Navbar = () => {
             </li>
             <li className="relative">
               <a
-                href="#company"
-                className={`px-8 font-medium hover:text-purple-1 transition-colors duration-300 ${
-                  activeMenu === "company" && "active-nav"
-                }`}
-                onClick={() => setActiveMenu("company")}
-              >
-                Company
-              </a>
-              {activeMenu === "company" && (
-                <div className="w-[20px] pt-2 border-b-4 border-white absolute left-[50%] translate-x-[-50%] translate-y-[-50%]" />
-              )}
-            </li>
-            <li className="relative">
-              <a
                 href="#features"
                 className={`px-8 font-medium hover:text-purple-1 transition-colors duration-300 ${
                   activeMenu === "features" && "active-nav"
@@ -67,6 +53,20 @@ const Navbar = () => {
                 Features
               </a>
               {activeMenu === "features" && (
+                <div className="w-[20px] pt-2 border-b-4 border-white absolute left-[50%] translate-x-[-50%] translate-y-[-50%]" />
+              )}
+            </li>
+            <li className="relative">
+              <a
+                href="#company"
+                className={`px-8 font-medium hover:text-purple-1 transition-colors duration-300 ${
+                  activeMenu === "company" && "active-nav"
+                }`}
+                onClick={() => setActiveMenu("company")}
+              >
+                Company
+              </a>
+              {activeMenu === "company" && (
                 <div className="w-[20px] pt-2 border-b-4 border-white absolute left-[50%] translate-x-[-50%] translate-y-[-50%]" />
               )}
             </li>
@@ -121,18 +121,6 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#company"
-                className={`font-medium text-2xl 
-                  hover:text-purple-1 transition-colors duration-300 ${
-                  activeMenu === "company" && "active-nav"
-                }`}
-                onClick={() => setActiveMenu("company")}
-              >
-                Company
-              </a>
-            </li>
-            <li>
-              <a
                 href="#features"
                 className={`font-medium text-2xl
                   hover:text-purple-1 transition-colors duration-300 ${
@@ -141,6 +129,18 @@ const Navbar = () => {
                 onClick={() => setActiveMenu("features")}
               >
                 Features
+              </a>
+            </li>
+            <li>
+              <a
+                href="#company"
+                className={`font-medium text-2xl 
+                  hover:text-purple-1 transition-colors duration-300 ${
+                  activeMenu === "company" && "active-nav"
+                }`}
+                onClick={() => setActiveMenu("company")}
+              >
+                Company
               </a>
             </li>
             <li className="mt-3">

@@ -62,7 +62,8 @@ const Hero = () => {
                   alt="Person Online" 
                   width={0}
                   height={0}
-                  className="w-8 h-8 object-contain"/>
+                  sizes="100vw"
+                  className="w-8 aspect-square object-contain rounded-full"/>
               ))}
             </div>
 

@@ -8,7 +8,7 @@ import { fadeIn, staggerContainer, textVariant } from "@utils/motion";
 
 const CompanyValues = () => {
   return (
-    <section id="values" className="padding relative z-10">
+    <section id="company" className="padding relative z-10">
       <div className="gradient-3 z-0"/>
 
       <motion.div 

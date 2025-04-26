@@ -31,8 +31,8 @@ const ClientCard = ({id, i, name, username, comment, image}: ClientProps) => {
           width={0}
           height={0}
           sizes="100vw" 
-          className="w-[35px] h-[35px] xs:w-[38px] 
-            xs:h-[38px] lg:w-[45px] lg:h-[45px] object-contain"
+          className="w-[35px] xs:w-[38px] 
+            lg:w-[45px] aspect-square object-contain rounded-full"
         />
 
         <div>

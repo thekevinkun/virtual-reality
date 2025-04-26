@@ -9,7 +9,7 @@ import { fadeIn, slideIn, staggerContainer } from "@utils/motion";
 
 const VRGAme = () => {
   return (
-    <section id="game" className="padding relative z-10 
+    <section id="features" className="padding relative z-10 
       mt-[14.15rem] xs:mt-[13.5rem] sm:mt-[15rem] md:mt-[18rem] lg:mt-[11.5rem] xl:mt-[16rem]"
     >
       <motion.div 
