@@ -14,7 +14,7 @@ const VRHeadsets = () => {
         variants={staggerContainer(0.25, 0.15)}
         initial="hidden"
         whileInView="show"
-        viewport={{once: false, amount: 0.25}}
+        viewport={{once: false, amount: 0.15}}
       >
         <CustomTexts 
           title="Mixed Reality Headsets"
