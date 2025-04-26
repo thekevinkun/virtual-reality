@@ -4,6 +4,8 @@
 
 **Design concept by <ins>Nicklefox Design</ins>: [Virtual Reality Landing Page](https://www.figma.com/community/file/1100751527569288223)**
 
+### **[Live Demo](https://thekevinkun-virtual-reality.vercel.app/)**
+
 ![screenshot](https://github.com/user-attachments/assets/d91c4317-5eb5-4250-99e5-97097bdf770d)
 
 ## Sections
