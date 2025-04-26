@@ -3,11 +3,13 @@ import VRGame from "@sections/VRGame";
 import VRVideo from "@sections/VRVideo";
 import VRHeadsets from "@sections/VRHeadsets";
 import Clients from "@sections/Clients";
+import CompanyValues from "@sections/CompanyValues";
 
 export {
     Hero,
     VRGame,
     VRVideo,
     VRHeadsets,
-    Clients
+    Clients,
+    CompanyValues
 }
