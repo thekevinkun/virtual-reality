@@ -21,7 +21,7 @@ const VRGAme = () => {
       >
         <motion.div 
           variants={slideIn("left", "tween", 0.5, 1)} 
-          className="flex flex-row order-1 lg:order-none gap-5"
+          className="flex flex-row order-2 lg:order-none gap-5"
         >
           <motion.div 
             variants={slideIn("left", "tween", 0.5, 1)}
@@ -31,14 +31,12 @@ const VRGAme = () => {
               aspect-[2/3] border border-white-1"
           >
             <Image 
+              loading="lazy"
               src="/images/experience-1.png" 
               alt="Game experience 1"
               fill
-              sizes="(min-width: 1280px) 285px, 
-                (min-width: 1024px) 245px, 
-                (min-width: 768px) 225px, 
-                (min-width: 640px) 245px,
-                (min-width: 480px) 195px, 165px"
+              sizes="(max-width: 640px) 165px,
+                (max-width: 768px) 195px, 245px"
               className="object-cover"
             />
           </motion.div>
@@ -50,20 +48,20 @@ const VRGAme = () => {
               xl:w-[285px] aspect-[2/3] border border-white-1"
           >
             <Image 
+              loading="lazy"
               src="/images/experience-2.png" 
               alt="Game experience 2"
               fill
-              sizes="(min-width: 1280px) 285px, 
-                (min-width: 1024px) 245px, 
-                (min-width: 768px) 225px, 
-                (min-width: 640px) 245px, 
-                (min-width: 480px) 195px, 165px"
+              sizes="(max-width: 640px) 165px,
+                (max-width: 768px) 195px, 245px"
               className="object-cover"
             />
           </motion.div>
         </motion.div>
 
-        <div className="flex flex-col items-center lg:items-start">
+        <div className="flex flex-col 
+          items-center lg:items-start order-1 lg:order-none"
+        >
           <CustomTexts 
             title="New Experience in Playing Game"
             textStyles="text-center lg:text-start 
@@ -93,15 +91,18 @@ const VRGAme = () => {
           </motion.div>
         </div>
 
-        <motion.div 
-          variants={slideIn("up", "tween", 0.75, 1)}
-          className="flex order-2 mt-2"
+        <div 
+          className="flex lg:!hidden order-3 mt-2"
         >
-          <Button 
-            containerStyles="lg:!hidden px-7 py-3"
-            title="Get it now"
-          />
-        </motion.div>
+          <motion.div 
+            variants={fadeIn("up", "tween", 0.75, 1)}
+          >
+            <Button 
+              containerStyles="px-7 py-3"
+              title="Get it now"
+            />
+          </motion.div>
+        </div>
       </motion.div>
     </section>
   )

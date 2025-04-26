@@ -26,11 +26,12 @@ const ClientCard = ({id, i, name, username, comment, image}: ClientProps) => {
 
       <div className="flex items-center gap-3">
         <Image 
+          loading="lazy"
           src={image} 
           alt="Clients avatar"
           width={0}
           height={0}
-          sizes="100vw" 
+          sizes="(min-width: 1024px) 45px, 38px" 
           className="w-[35px] xs:w-[38px] 
             lg:w-[45px] aspect-square object-contain rounded-full"
         />

@@ -27,9 +27,15 @@ const CompanyValues = () => {
           >
             Our company values <br className="hidden lg:block"/>culture
             <span className="inline-block">
-              <img 
+              <Image 
+                loading="lazy"
                 src="/icons/love.svg" 
                 alt="Love icon"
+                width={0}
+                height={0}
+                sizes="(min-width: 1280px) 30px,
+                      (min-width: 768px) 26px,
+                      (min-width: 640px) 23px, 16px"
                 className="ml-2 sm:ml-3 w-[16px] h-[16px] sm:w-[23px] sm:h-[23px] 
                   md:w-[26px] md:h-[26px] xl:w-[30px] xl:h-[30px] object-contain"
               />
@@ -56,11 +62,15 @@ const CompanyValues = () => {
               className="flex flex-col items-center gap-2"
             >
               <Image 
+                loading="lazy"
                 src={item.img} 
                 alt={item.title}
                 width={0}
                 height={0}
-                sizes="100vw" 
+                sizes="(min-width: 1280px) 58px,
+                      (min-width: 1024px) 54px,
+                      (min-width: 768px) 58px,
+                      (min-width: 480px) 50px, 46px"
                 className="w-[46px] h-[46px] xs:w-[50px] xs:h-[50px] 
                   md:w-[58px] md:h-[58px] lg:w-[54px] lg:h-[54px] 
                   xl:w-[58px] xl:h-[58px] object-contain" 

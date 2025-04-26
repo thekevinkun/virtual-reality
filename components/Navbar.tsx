@@ -81,7 +81,7 @@ const Navbar = () => {
             alt="menu icon"
             width={22}
             height={22}
-            sizes="100vw"
+            sizes="22px"
             onClick={() => setIsShowMobileMenu(true)}
             className="block lg:hidden object-cover 
               cursor-pointer hover:opacity-70 transition-opacity duration-300"
@@ -92,7 +92,7 @@ const Navbar = () => {
             alt="close menu icon"
             width={22}
             height={22}
-            sizes="100vw"
+            sizes="22px"
             onClick={() => setIsShowMobileMenu(false)}
             className="block lg:hidden object-cover 
               cursor-pointer hover:opacity-70 transition-opacity duration-300"
@@ -101,7 +101,8 @@ const Navbar = () => {
         
         {/* MENU MOBILE */}
         <div 
-          className={`${isShowMobileMenu ? "glassmorphism-1 w-96" : "w-0"} 
+          className={`${isShowMobileMenu 
+            ? "glassmorphism-1 w-64 xs:w-80 sm:w-96" : "w-0"} 
             fixed top-0 left-0 transition-all z-50`}
         >
           <ul className="h-screen flex flex-col items-center justify-center

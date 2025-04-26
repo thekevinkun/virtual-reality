@@ -58,21 +58,23 @@ const Hero = () => {
               {peopleOnline.people.map((person, index) => (
                 <Image 
                   key={index} 
+                  loading="lazy"
                   src={person} 
                   alt="Person Online" 
                   width={0}
                   height={0}
-                  sizes="100vw"
+                  sizes="32px"
                   className="w-8 aspect-square object-contain rounded-full"/>
               ))}
             </div>
 
             <Image 
+              loading="lazy"
               src="/icons/ellipse-small.svg" 
               alt="Small Ellipse" 
               width={0}
               height={0}
-              sizes="100vw"
+              sizes="12px"
               className="w-3 h-3 object-contain"
             />
             <p className="font-semibold text-sm sm:text-base">{peopleOnline.total} people online</p>
@@ -93,11 +95,17 @@ const Hero = () => {
             className="relative md:mt-10 lg:mt-0 xl:mt-7 mt-12"
           >
             <Image 
+              loading="lazy"
               src="/images/hero.png" 
               alt="Hero" 
               width={0}
               height={0}
-              sizes="100vw"
+              sizes="(min-width: 1280px) 500px,
+                (min-width: 1024px) 410px,
+                (min-width: 768px) 495px,
+                (min-width: 640px) 438px,
+                (min-width: 480px) 409px,
+                352px"
               className="relative w-[352px] xs:w-[409px] sm:w-[438px] md:w-[495px]
                 lg:w-[410px] xl:w-[500px] h-full object-contain z-10"
             />

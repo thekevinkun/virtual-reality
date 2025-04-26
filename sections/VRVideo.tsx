@@ -37,6 +37,7 @@ const VRVideo = () => {
               lg:pr-10 w-[65%] md:w-full h-auto"
           >
             <Image 
+              loading="lazy"
               src="/images/experience-video.png" 
               alt="VR World Experience video poster"
               width={0}
@@ -51,13 +52,17 @@ const VRVideo = () => {
               md:translate-x-[-65%] lg:translate-x-[-75%] translate-y-[-50%]"
             >
               <Image 
+                loading="lazy"
                 src="/icons/play.svg"
                 alt="Play icon"
                 width={0}
                 height={0}
-                sizes="100vw"
-                className="w-[27px] h-[27px] xs:w-[30px] xs:h-[30px] 
-                md:w-[24px] md:h-[24px] lg:w-[32px] lg:h-[32px] object-contain"
+                sizes="(min-width: 1024px) 32px,
+                  (min-width: 768px) 24px,
+                  (min-width: 480px) 30px,
+                  24px"
+                className="w-[24px] h-[24px] xs:w-[30px] xs:h-[30px] 
+                  md:w-[24px] md:h-[24px] lg:w-[32px] lg:h-[32px] object-contain"
               />
             </div>
           </div>

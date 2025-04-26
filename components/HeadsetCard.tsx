@@ -16,11 +16,12 @@ const HeadsetCard = ({id, i, title, description, image}: HeadsetProps) => {
       className="relative w-full h-full"
     >
       <Image 
+        loading="lazy"
         src={image} 
         alt={title}
         width={0}
         height={0}
-        sizes="100vw" 
+        sizes="(min-width: 768px) 50vw, 100vw" 
         className="w-full h-full object-cover rounded-2xl"
       />
 

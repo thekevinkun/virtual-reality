@@ -58,11 +58,12 @@ const Footer = () => {
           {socials.map((item) => (
             <Image 
               key={item.name}
+              loading="lazy"
               src={item.url}
               alt={item.name}
               width={0}
               height={0}
-              sizes="100vw"
+              sizes="(min-width: 640px) 24px, 20px"
               className="w-[20px] h-[20px] sm:w-[24px] sm:h-[24px] 
                 object-contain cursor-pointer"
             />

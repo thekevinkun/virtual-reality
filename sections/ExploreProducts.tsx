@@ -40,11 +40,13 @@ const ExploreProducts = () => {
                 new way
                 <span className="ml-1 xs:ml-2 lg:ml-3 inline-block">
                   <Image 
+                    loading="lazy"
                     src="/icons/angle-right.svg" 
                     alt="angle right icons"
                     width={0}
                     height={0}
-                    sizes="100vw"
+                    sizes="(min-width: 1280px) 30px,
+                      (min-width: 640px) 24px, 16px"
                     className="w-[16px] h-[16px] sm:w-[24px] sm:h-[24px] 
                       xl:w-[30px] xl:h-[30px] object-contain"
                   />
@@ -86,6 +88,7 @@ const ExploreProducts = () => {
             </div>
 
             <Image
+              loading="lazy"
               src="/images/explore-product.png" 
               alt="Explore background" 
               width={0}
