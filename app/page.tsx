@@ -1,7 +1,7 @@
 import { Navbar } from "@components";
 import { Hero, VRGame, VRVideo, 
       VRHeadsets, Clients, CompanyValues, 
-      ExploreProducts } from "@sections";
+      ExploreProducts, Footer } from "@sections";
 
 const Home = () => {
   return (
@@ -20,6 +20,7 @@ const Home = () => {
       </div>
       <CompanyValues />
       <ExploreProducts />
+      <Footer />
     </div>
   )
 }
