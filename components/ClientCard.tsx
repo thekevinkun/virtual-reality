@@ -21,7 +21,7 @@ const ClientCard = ({id, i, name, username, comment, image}: ClientProps) => {
       </p>
 
       <p className="p text-[0.675rem] leading-[0.975rem] sm:text-xs lg:!text-sm">
-        "{comment}"
+        &rdquo;{comment}&ldquo;
       </p>
 
       <div className="flex items-center gap-3">

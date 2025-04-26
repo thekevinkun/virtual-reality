@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ButtonProps } from "@types";
 
 const Button = ({containerStyles, textStyles, title, btnIcon, iconStyles, handleClick}: ButtonProps) => {
@@ -7,7 +8,16 @@ const Button = ({containerStyles, textStyles, title, btnIcon, iconStyles, handle
       onClick={handleClick}
     >
       <span className={`relative z-10 ${textStyles}`}>
-        {title}{btnIcon && (<span><img src={btnIcon} alt="button icon" className={iconStyles}/></span>)}
+        {title}{btnIcon && 
+          (<span>
+            <Image 
+            src={btnIcon} 
+            alt="button icon"
+            width={0}
+            height={0}
+            sizes="100vw" 
+            className={iconStyles ? iconStyles : "w-full h-full"}/>
+          </span>)}
       </span>
     </button>
   )

@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 import { Button, CustomTexts } from "@components";
@@ -43,7 +44,8 @@ const Hero = () => {
             />
 
             <Button 
-              containerStyles="px-5 py-3 bg-none hover:bg-none hover:bg-purple-1/10 transition-[background-color] duration-300"
+              containerStyles="px-5 py-3 bg-none hover:bg-none hover:bg-purple-1/10
+                transition-[background-color] duration-300"
               title="Explore Device"
             />
           </motion.div>
@@ -54,11 +56,24 @@ const Hero = () => {
           >
             <div className="flex items-center">
               {peopleOnline.people.map((person, index) => (
-                <img key={index} src={person} alt="Person Online" className="w-8 h-8 object-contain"/>
+                <Image 
+                  key={index} 
+                  src={person} 
+                  alt="Person Online" 
+                  width={0}
+                  height={0}
+                  className="w-8 h-8 object-contain"/>
               ))}
             </div>
 
-            <img src="/icons/ellipse-small.svg" alt="Small Ellipse" className="w-3 h-3 object-contain"/>
+            <Image 
+              src="/icons/ellipse-small.svg" 
+              alt="Small Ellipse" 
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-3 h-3 object-contain"
+            />
             <p className="font-semibold text-sm sm:text-base">{peopleOnline.total} people online</p>
           </motion.div>
         </div>
@@ -76,16 +91,20 @@ const Hero = () => {
             variants={fadeIn("up", "tween", 0.75, 1)} 
             className="relative md:mt-10 lg:mt-0 xl:mt-7 mt-12"
           >
-            <img 
+            <Image 
               src="/images/hero.png" 
               alt="Hero" 
+              width={0}
+              height={0}
+              sizes="100vw"
               className="relative w-[352px] xs:w-[409px] sm:w-[438px] md:w-[495px]
                 lg:w-[410px] xl:w-[500px] h-full object-contain z-10"
             />
             
-            <div className="w-[325px] h-[380px] xs:w-[380px] xs:h-[420px]
-                sm:w-[405px] sm:h-[450px] md:w-[453px] md:h-[495px] lg:w-[380px] 
-                lg:h-[420px] xl:w-[465px] xl:h-[465px]
+            <div 
+              className="w-[325px] h-[380px] xs:w-[380px] xs:h-[420px]
+                sm:w-[405px] sm:h-[450px] md:w-[453px] md:h-[495px] 
+                lg:w-[380px] lg:h-[420px] xl:w-[465px] xl:h-[465px]
                 z-[5] absolute left-[16px] xs:left-[19px] 
                 sm:left-[22px] md:left-[28px] lg:left-[18px] 
                 xl:left-[22px] top-[45%] 
@@ -94,7 +113,9 @@ const Hero = () => {
               <div className="px-3 h-full flexCenter flex-col">
                 <CustomTexts 
                   title="Cinematic Virtual Reality"
-                  textStyles="mt-28 text-[1.15rem] leading-[1.35rem] xs:text-[1.35rem] xs:leading-[1.75rem] sm:text-[1.5rem] sm:leading-[2rem] xl:text-[1.65rem] xl:leading-[2.15rem]"
+                  textStyles="mt-28 text-[1.15rem] leading-[1.35rem]
+                    xs:text-[1.35rem] xs:leading-[1.75rem] sm:text-[1.5rem]
+                    sm:leading-[2rem] xl:text-[1.65rem] xl:leading-[2.15rem]"
                 />
 
                 <div className="mt-7 w-[150px] xs:w-[170px] sm:w-[240px] border border-white-1" />
