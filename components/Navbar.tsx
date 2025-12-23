@@ -12,10 +12,11 @@ const Navbar = () => {
   const [isShowMobileMenu, setIsShowMobileMenu] = useState(false);
 
   return (
-    <motion.nav  
+    <motion.nav
       variants={navVariants}
       initial="hidden"
       whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
       className="xPaddings py-8"
     >
       <div className="nav-gradient" />
@@ -73,9 +74,9 @@ const Navbar = () => {
           </ul>
           <Button containerStyles="px-5 py-2" title="Sign Up" />
         </div>
-        
+
         {/* MENU MOBILE ICON */}
-        {!isShowMobileMenu ?
+        {!isShowMobileMenu ? (
           <Image
             src="/icons/menu.svg"
             alt="menu icon"
@@ -84,9 +85,9 @@ const Navbar = () => {
             sizes="22px"
             onClick={() => setIsShowMobileMenu(true)}
             className="block lg:hidden object-cover 
-              cursor-pointer hover:opacity-70 transition-opacity duration-300"
+              cursor-pointer hover:opacity-70 transition-opacity duration-300 will-change-[opacity]"
           />
-        :
+        ) : (
           <Image
             src="/icons/cross.svg"
             alt="close menu icon"
@@ -95,17 +96,21 @@ const Navbar = () => {
             sizes="22px"
             onClick={() => setIsShowMobileMenu(false)}
             className="block lg:hidden object-cover 
-              cursor-pointer hover:opacity-70 transition-opacity duration-300"
+              cursor-pointer hover:opacity-70 transition-opacity duration-300 will-change-[opacity]"
           />
-        }
-        
+        )}
+
         {/* MENU MOBILE */}
-        <div 
-          className={`${isShowMobileMenu 
-            ? "glassmorphism-1 w-64 xs:w-80 sm:w-96" : "w-0"} 
-            fixed top-0 left-0 transition-all z-50`}
+        <div
+          className={`${
+            isShowMobileMenu
+              ? "glassmorphism-1 w-64 xs:w-80 sm:w-96"
+              : "w-0 opacity-0 pointer-events-none"
+          }
+            fixed top-0 left-0 transition-all duration-300 z-50`}
         >
-          <ul className="h-screen flex flex-col items-center justify-center
+          <ul
+            className="h-screen flex flex-col items-center justify-center
             gap-y-7 overflow-x-hidden overflow-y-auto"
           >
             <li>
@@ -113,8 +118,8 @@ const Navbar = () => {
                 href="#home"
                 className={`font-medium text-2xl 
                   hover:text-purple-1 transition-colors duration-300 ${
-                  activeMenu === "home" && "active-nav"
-                }`}
+                    activeMenu === "home" && "active-nav"
+                  }`}
                 onClick={() => setActiveMenu("home")}
               >
                 Home
@@ -125,8 +130,8 @@ const Navbar = () => {
                 href="#features"
                 className={`font-medium text-2xl
                   hover:text-purple-1 transition-colors duration-300 ${
-                  activeMenu === "features" && "active-nav"
-                }`}
+                    activeMenu === "features" && "active-nav"
+                  }`}
                 onClick={() => setActiveMenu("features")}
               >
                 Features
@@ -137,18 +142,18 @@ const Navbar = () => {
                 href="#company"
                 className={`font-medium text-2xl 
                   hover:text-purple-1 transition-colors duration-300 ${
-                  activeMenu === "company" && "active-nav"
-                }`}
+                    activeMenu === "company" && "active-nav"
+                  }`}
                 onClick={() => setActiveMenu("company")}
               >
                 Company
               </a>
             </li>
             <li className="mt-3">
-              <Button 
+              <Button
                 containerStyles="px-5 py-3"
-                textStyles="text-lg" 
-                title="Sign Up" 
+                textStyles="text-lg"
+                title="Sign Up"
               />
             </li>
           </ul>

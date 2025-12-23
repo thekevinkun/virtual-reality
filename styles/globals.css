@@ -110,23 +110,23 @@
   }
 
   .nav-gradient {
-    @apply absolute top-0 left-[9%] sm:left-[14%] w-[300px] h-[80px] md:w-[560px] md:h-[100px] bg-purple blur-[100px] md:blur-[125px];
+    @apply absolute top-0 left-[9%] sm:left-[14%] w-[300px] h-[80px] md:w-[560px] md:h-[100px] bg-purple blur-[80px] md:blur-[100px];
   }
 
   .gradient-1 {
-    @apply absolute top-[55%] lg:top-[40%] left-0 w-[185px] h-[438px] bg-purple blur-[130px];
+    @apply absolute top-[55%] lg:top-[40%] left-0 w-[185px] h-[438px] bg-purple blur-[100px];
   }
 
   .gradient-2 {
-    @apply absolute top-[50%] lg:top-[45%] left-0 w-[185px] h-[610px] bg-purple blur-[125px];
+    @apply absolute top-[50%] lg:top-[45%] left-0 w-[185px] h-[610px] bg-purple blur-[100px];
   }
 
   .gradient-3 {
-    @apply absolute top-0 right-0 w-[150px] h-[320px] bg-purple blur-[125px];
+    @apply absolute top-0 right-0 w-[150px] h-[320px] bg-purple blur-[100px];
   }
 
   .gradient-4 {
-    @apply absolute bottom-[0] left-[50%] translate-x-[-50%] w-[380px] h-[45px] bg-purple blur-[125px];
+    @apply absolute bottom-[0] left-[50%] translate-x-[-50%] w-[380px] h-[45px] bg-purple blur-[100px];
   }
 
   .active-nav {

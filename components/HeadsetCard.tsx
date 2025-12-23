@@ -10,23 +10,23 @@ import { fadeIn } from "@utils/motion";
 const HeadsetCard = ({id, i, title, description, image}: HeadsetProps) => {
   return (
     <motion.div 
-      variants={fadeIn("up", "tween", 0.5 * ((i + 1) / 2), 1)}
+      variants={fadeIn("up", "tween", 0.2 * (i + 1), 0.8)}
       key={id}
       id={id} 
       className="relative w-full h-full"
     >
-      <Image 
+      <Image
         loading="lazy"
-        src={image} 
-        alt={title}
-        width={0}
-        height={0}
-        sizes="(min-width: 768px) 50vw, 100vw" 
+        src={image}
+        alt={`${title} - VR headset technology`}
+        width={640}
+        height={480}
+        sizes="(min-width: 768px) 50vw, 100vw"
         className="w-full h-full object-cover rounded-2xl"
       />
 
       <div 
-        className={`glassmorphism-1 ${id === "headset-1" ? "left-[1px]" 
+        className={`glassmorphism-1 will-change-[backdrop-filter] ${id === "headset-1" ? "left-[1px]" 
             : id === "headset-2" ? "left-[2px]" : "left-[0px]"}
             absolute bottom-0 px-5 py-3 sm:px-7 
             md:px-5 md:py-3 lg:px-7 lg:py-4 rounded-bl-xl 
