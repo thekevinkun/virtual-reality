@@ -4,7 +4,7 @@ A high-performance, fully responsive virtual reality landing page built with mod
 
 **Design concept by <ins>Nicklefox Design</ins>: [Virtual Reality Landing Page](https://www.figma.com/community/file/1100751527569288223)**
 
-**[🚀 View Live Demo](https://thekevinkun-virtual-reality.vercel.app/)**
+**[🚀 View Live Demo](https://vr-futureplay.vercel.app/)**
 
 ![screenshot](https://github.com/user-attachments/assets/d91c4317-5eb5-4250-99e5-97097bdf770d)
 
@@ -159,7 +159,7 @@ virtual-reality/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/thekevinkun/virtual-reality.git
+   git clone https://github.com/thekevinkun/vr-futureplay.git
    ```
 
 2. **Navigate to project directory**
@@ -219,8 +219,8 @@ This project is a faithful recreation of the original Figma design with addition
 
 ## 🔗 Links
 
-- **Live Demo:** [https://thekevinkun-virtual-reality.vercel.app/](https://thekevinkun-virtual-reality.vercel.app/)
-- **Repository:** [https://github.com/thekevinkun/virtual-reality](https://github.com/thekevinkun/virtual-reality)
+- **Live Demo:** [https://thekevinkun-virtual-reality.vercel.app/](https://vr-futureplay.vercel.app/)
+- **Repository:** [https://github.com/thekevinkun/vr-futureplay](https://github.com/thekevinkun/vr-futureplay)
 - **Portfolio:** [https://kevinmahendra.vercel.app](https://kevinmahendra.vercel.app)
 
 ---
